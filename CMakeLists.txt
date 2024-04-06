@@ -68,6 +68,8 @@ include("${CMAKE_SOURCE_DIR}/libs/tbb.cmake")
 
 include("${CMAKE_SOURCE_DIR}/shared-headers/local.cmake")
 
+add_definitions("-w")
+
 # ---------------------------------------------------------------------------
 # Sources
 # ---------------------------------------------------------------------------

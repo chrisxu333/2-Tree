@@ -12,6 +12,7 @@
 #include "rocksdb/merge_operator.h"
 #include "rocksdb/iostats_context.h"
 #include "rocksdb/perf_context.h"
+#include "rocksdb/advanced_cache.h"
 
 // -------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------

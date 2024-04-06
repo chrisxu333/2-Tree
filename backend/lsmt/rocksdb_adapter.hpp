@@ -17,6 +17,8 @@
 #include "rocksdb/filter_policy.h"
 #include "rocksdb/iostats_context.h"
 #include "rocksdb/perf_context.h"
+#include "rocksdb/statistics.h"
+
 template <typename Key, typename Payload>
 struct RocksDBAdapter : public leanstore::StorageInterface<Key, Payload> {
    rocksdb::DB* db;

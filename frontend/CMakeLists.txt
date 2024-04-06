@@ -25,3 +25,7 @@ target_include_directories(tpcc PRIVATE ${SHARED_INCLUDE_DIRECTORY})
 # add_executable(wiredtiger_tpcc tpc-c/wiredtiger_tpcc.cpp)
 # target_link_libraries(wiredtiger_tpcc leanstore wiredtiger Threads::Threads dl z libbz2.a lz4 snappy)
 # target_include_directories(wiredtiger_tpcc PRIVATE ${SHARED_INCLUDE_DIRECTORY})
+
+add_executable(bench_twotree bench_twotree.cpp)
+target_link_libraries(bench_twotree leanstore Threads::Threads tcmalloc)
+target_include_directories(bench_twotree PRIVATE ${SHARED_INCLUDE_DIRECTORY} ${CMAKE_DL_LIBS})
